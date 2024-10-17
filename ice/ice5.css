@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    margin: 0, auto;
+    display: block;
+}
+.view{
+    background-color: #737373;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero {
+    width: 100%;
+}
+.logos{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+.logos img{
+    max-width: 250px;
+    border-radius: 100%;
+    border-color: #444444;
+    border-style: solid;
+    border-width: 15px;
+}
