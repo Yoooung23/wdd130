@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 #content{
-  background-color: #dff7f8;
+  background-color: #ffffff;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', 'Josefin Sans', 'Rock Salt', Arial, sans-serif;
   text-decoration: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #logo_link {
   text-align: center;
   margin: 0 auto;
+  padding-top: 5px;
 }
 #logo {
   text-align: center;
@@ -21,6 +22,7 @@ nav a{
   text-align: center;
   color: #d9c2a3;
   text-decoration: none;
+  padding: 35px;
 }
 nav a:hover{
   background-color: #e4a55eff;
@@ -29,17 +31,32 @@ nav a:hover{
   height: 725px;
 }
 body{
-  font-family: 'Roboto', sans-serif;
   background-color: #121113ff;
+  font-family: 'Roboto', 'Josefin Sans', 'Rock Salt', Arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+h2{
+  margin: 0;
 }
 header{
-  background-color: rgb(232, 41, 191);
+  background-color: #e88329ff;
 }
 #hero {
   text-align: center;
 }
 #hero-msg h1, #hero-msg h4 {
   text-align: center;
+}
+.home-title{
+  color: #d9c2a3;
+  font-family: 'Rock Salt', 'Roboto','Josefin Sans', Arial, sans-serif;
+  font-size: 3rem;
+  margin-top: 10px;
+}
+#hero img{
+  width: 100%;
 }
 h4{
   color: #d9c2a3;
@@ -52,12 +69,12 @@ h4{
 main section{
   text-align: center;
 }
+main section img {
+  box-sizing: border-box;
+}
 main {
   text-align: center;
-  margin: 0, auto;
-}
-.icon {
-  width: 80px;
+  margin: 0 auto;
 }
 #background{
   background-color: #292F36;
@@ -67,23 +84,40 @@ main {
   background-color: #e88329ff;
   text-decoration: none;
   padding: 2px;
-  border-radius: 10%;
+  font-size: 18px;
+  margin: 50px;
+  border-radius: 5px;
 }
 .book:hover, .join:hover{
-  background-color: #e88329ff;
-  color: #d9c2a3;
+  background-color: #B1E9FF;
+  color: #fff;
+}.card-img{
+  border: 10px solid #d9c2a3
+}
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+.icon {
+  width: 80px;
+  padding-top: 10px;
 }
 .msg{
   background-color: #B1E9FF;
+  line-height: 2em;
+  padding: 35px;
 }
 .msg h2{
   color: #292F36;
+  font-family: 'Josefin Sans';
 }
 .msg p{
   color: #292F36;
-}
-.home-title{
-  color: #d9c2a3;
+  font-size: .8em;
+  /* my add */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  /* my add */
 }
 .mountains{
   text-align: center;
@@ -92,6 +126,8 @@ main {
 footer{
   color: #d9c2a3;
   background-color: #e88329ff;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 footer a{
   color: #d9c2a3;
@@ -106,3 +142,6 @@ footer p{
 footer p a:hover {
   text-decoration: underline;
 } 
+footer .social img{
+  padding-top: 15px;
+}
