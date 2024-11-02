@@ -136,7 +136,6 @@ main {
   font-size: 18px;
   margin: 50px;
   border-radius: 5px;
-  transition: transform .5s;
 }
 .join{
   color: #f6dfc2;
@@ -146,13 +145,10 @@ main {
   font-size: 18px;
   margin: 50px;
   border-radius: 5px;
-  transition: transform .5s;
 }
 .book:hover, .join:hover{
   background-color: #B1E9FF;
-  color: #fff;
-  transform: scale(1.1);
-  opacity: 0.6;
+  color: #000000;
 }
 .card-img{
   border: 10px solid #d9c2a3;
