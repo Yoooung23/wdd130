@@ -45,8 +45,7 @@ nav a{
   padding: 25px;
 }
 nav a:hover{
-  /* color: #B1E9FF; */
-  background-color: #86b184;
+  background-color: #87b185;
 }
 #background { 
   height: 725px;
