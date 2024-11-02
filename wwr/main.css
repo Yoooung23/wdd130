@@ -17,6 +17,10 @@ nav a :hover {
 .logo {
     width: 100px;
 }
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+}
 header a{
     display: block;
     margin: 0, auto;
