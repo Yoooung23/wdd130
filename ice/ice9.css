@@ -1,0 +1,28 @@
+body{
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+#content{
+    display: grid;
+    text-align: center;
+    justify-self: center;
+    background-color: #fff;
+    max-width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.message{
+    text-align: center;
+    color: #1e1e1e;
+}
+nav{
+
+    background-color: #4a62a4;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #4a62a4;
+}
