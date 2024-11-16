@@ -293,7 +293,6 @@ main {
 
 .bubble{
   display: flex;
-  justify-content: space between;
   z-index: 2;
   align-items: center;
   max-width: 1200px;
@@ -343,7 +342,6 @@ main {
   text-align: center;
   padding: 5px;
 }
-
 /* ----------------------- */
 footer{
   color: #f6dfc2;
@@ -456,4 +454,4 @@ footer .social img:hover {
   footer {
       margin-top: 10px;
   }
-}
+}  
