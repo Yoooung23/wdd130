@@ -31,7 +31,7 @@ img.logo{
   max-width: 70px;
 }
 #logo_link:hover img {
-  opacity: 0.8; /* Change opacity on hover */
+  opacity: 0.8;
 }
 nav{
   text-align: center;
@@ -86,6 +86,7 @@ h2{
 .trips-title{
   color: #ffffff;
   font-family: 'Roboto','Josefin Sans', Arial, sans-serif;
+  font-size: 40px;
 }
 h4{
   color: #d9c2a3;
@@ -134,10 +135,10 @@ main {
   margin: 0 auto;
 }
 .book{
-  color: #000000;
+  color: #2c4d2a;
   background-color: #f6dfc2;
   text-decoration: none;
-  padding: 2px;
+  padding: 5px;
   font-size: 18px;
   margin: 50px;
   border-radius: 5px;
@@ -152,10 +153,9 @@ main {
   border-radius: 5px;
 }
 .book:hover, .join:hover{
-  /* background-color: #B1E9FF; */
   background-color: #86b184;
   color: #000000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .card-img{
   border: 10px solid #d9c2a3;
@@ -200,13 +200,22 @@ main {
   font-family: 'Permanent Marker';
   color: #feead1;
 }
-.selection{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.selection {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
 }
-.selection img{
-  max-width: 500px;
-  max-height: 300px;
+  .low, .medium, .high {
+    flex: 1 1 30%;
+    margin: 10px;
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border-radius: 5px; 
+}
+.trip-container img {
+    width: 95%;
 }
 .low{
   grid-row: 1/2;
@@ -214,6 +223,15 @@ main {
   margin: 20px;
   box-shadow: 5px 5px 10px #d9c2a3;
   padding: 10px;
+  transition: transform .5s;
+}
+.low a:hover{
+  display: block;
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+.low a{
+  text-decoration: none;
 }
 .medium{
   grid-row: 1/2;
@@ -221,6 +239,15 @@ main {
   margin: 20px;
   box-shadow: 5px 5px 10px #d9c2a3;
   padding: 10px;
+  transition: transform .5s;
+}
+.medium a:hover{
+  display: block;
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+.medium a{
+  text-decoration: none;
 }
 .high{
   grid-row: 1/2;
@@ -228,6 +255,15 @@ main {
   margin: 20px;
   box-shadow: 5px 5px 10px #d9c2a3;
   padding: 10px;
+  transition: transform .5s;
+}
+.high a:hover{
+  display: block;
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+.high a{
+  text-decoration: none;
 }
 .selection p, .selection h2 {
   padding: 20px;
@@ -250,13 +286,14 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 725px;
+  height: auto;
+  padding: 100px 30px 100px 30px;
   margin-top: 80px;
 }
 
 .bubble{
   display: flex;
-  justify-content: center;
+  justify-content: space between;
   z-index: 2;
   align-items: center;
   max-width: 1200px;
@@ -268,7 +305,7 @@ main {
   text-align: center;
   margin: 0 auto;
   max-width: 100%;
-  box-shadow: 5px 5px 10px #2d2d2d;
+  box-shadow: 5px 5px 10px #2c1e0e;
   
 }
 .txt{
@@ -279,7 +316,7 @@ main {
   height: 400px;
   margin: 0 auto;
   margin-left: 20px;
-  box-shadow: 5px 5px 10px #2d2d2d;
+  box-shadow: 5px 5px 10px #2c1e0e;
 }
 .txt h2{
   padding-top: 30px;
@@ -287,22 +324,32 @@ main {
 }
 .txt p{
   color: #f6dfc2;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+.smiles, .txt {
+    flex: 1; 
+    margin: 10px; 
+    border-radius: 5px; 
 }
 .plan{
   margin: 0 auto;
   max-width: 280px;
   text-align: center;
 }
-.plan a h4{
+.plan a{
   text-align: center;
   padding: 5px;
 }
+
 /* ----------------------- */
 footer{
   color: #f6dfc2;
   background-color: #2c4d2a;
   padding: 25px 50px;
-  margin-top: 200px;
+  margin-top: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -325,10 +372,9 @@ footer .social img{
   max-width: 50px;
 }
 footer .social img:hover {
-  opacity: 0.5; /* Change opacity on hover */
+  opacity: 0.5;
 }
-/* mobile addition 
-----------------------------------------*/
+/* ------------ mobile addition ----------------------------*/
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
       display: block;
@@ -360,6 +406,45 @@ footer .social img:hover {
       margin: 50px auto;
       width: 60%;
   }
+  .selection {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .low, .medium, .high {
+    flex: 1 1 100%; 
+    margin: 10px 0; 
+  }
+  #hook{
+    padding: 10px;
+  }
+  .bubble{
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c4d2a;
+    height: auto;
+  }
+  .smiles, .txt {
+    max-width: 95%;
+    flex: none;
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: none;
+  }
+  .txt {
+    padding: 10px;
+    height: auto;
+    background-color: #2c4d2a;
+  }
+  .txt h2{
+    padding: 20px;
+  }
+  .txt p{
+    display: none;
+  }
+  .background-image{
+    display: none;
+  }
   #background {
       display: none;
   }
@@ -369,6 +454,6 @@ footer .social img:hover {
       margin: 0 auto;
   }
   footer {
-      margin-top: 25px;
+      margin-top: 10px;
   }
 }
