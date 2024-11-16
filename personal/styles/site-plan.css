@@ -4,11 +4,11 @@ Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 :root {
-  --primary-color: #801616ff   ;
-  --secondary-color: #f3d8c7ff ;
-  --accent1-color: #262730ff;
-  --accent2-color: white;
-  --background-color: #02020aff;
+  --primary-color: #801616   ;
+  --secondary-color: #f3d8c7 ;
+  --accent1-color: #262730;
+  --accent2-color: #ebc34b;
+  --background-color: #801616;
   /* --falu-red: #801616ff;
   --champagne-pink: #f3d8c7ff;
   --raisin-black: #262730ff;
@@ -20,14 +20,14 @@ Fonts are separated by a | */
   --paragraph-font: "Roboto Flex",Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #801616ff;  /* headlines on a white background */ 
+  --headline-color-on-white: #801616;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #262730ff; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #f3d8c7ff; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #801616ff  ;
+  --paragraph-color-on-white: #262730; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #f3d8c7; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #801616  ;
   --nav-link-color: #540707;
   --nav-background-color: #801616ff;
-  --nav-hover-link-color: #ffffff;
+  --nav-hover-link-color: #ebc34b;
   --nav-hover-background-color: #8e1b1b;
 }
 
@@ -47,6 +47,9 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
+}
+.para{
+  font-family: var(--paragraph-font);
 }
 h2 {
   text-align: center;
@@ -122,10 +125,10 @@ nav a {
 
 }
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+  color: var(--nav-hover-link-color);
 }
 nav a:hover {
-  color: var(--nav-hover-link-color);
+  color: var(--nav-link-color);
   background-color: var(--nav-hover-background-color);
 }
 
