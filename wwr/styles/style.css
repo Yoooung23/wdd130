@@ -377,6 +377,7 @@ form {
   display: inline-block;
   /* Form outline */
   padding: 1em;
+  margin-top: 80px;
   border: 1px solid #ccc;
   border-radius: 1em;
 }
