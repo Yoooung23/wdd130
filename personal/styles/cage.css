@@ -1,6 +1,13 @@
 html {
     background-color: #f0ffff; /* Change this to your desired background color */
 }
+:root {
+    --primary-color: #801616;
+    --secondary-color: #f3d8c7;
+    --accent1-color: #262730;
+    --accent2-color: #ebc34b;
+    --background-color: #801616;
+}
 body{
     max-width: 1600px;
     text-align: center;
@@ -8,27 +15,57 @@ body{
 }
 header{
     background-color: #801616;
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    margin: 0 auto;
 }
-#hero{
- background-color: #ffffff;
+nav {
+    display: flex;
+    justify-content: space-between; /* This will distribute space between the items */
+    align-items: center;
+    margin: 0 auto;
+    max-width: 500px; /* This will vertically center the items */
 }
-a img{
-    width: 100px;
-    /* border-radius: 100%; */
+
+#logo {
+    order: 1; /* Ensure the logo is in the center */
+    margin: 0 auto; /* Center the logo */
 }
 nav a {
     display: flex; /* Use flexbox to align items */
     align-items: center; /* Center items vertically */
     text-decoration: none; /* Remove underline */
-    padding: 10px; /* Space around text */
-    color: #333; /* Text color */
+    padding: 10px;
+    margin: 0 20px; /* Space around text */
+    color: #ddb22f; /* Text color */
 }
 
 nav img {
     margin-left: 5px; /* Space between text and image */
 }
+#hero{
+    background-color: #ffffff;
+}
+a img{
+    width: 100px;
+}
 footer{
     background-color: #801616;
+    color: #ddb22f;
+    
+}
+.social{
+    display: flex;
+    justify-content: space-between; /* This will distribute space between the items */
+    align-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.social a{
+    text-decoration: none;
+}
+.f-nav{
+    
+}
+.f-nav a{
+    text-decoration: none;
+    color:#f0ffff
 }
