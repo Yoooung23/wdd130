@@ -7,36 +7,67 @@
     <link rel="stylesheet" href="styles/cage.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="faq.html" aria-label="About">About</a>
-            <div class="logo-container">
-                <a href="index.html" aria-label="Home">
-                    <img id="logo" src="images/DC-2.png" alt="DateCage.com Icon">
+    <div class="cage">
+        <header>
+            <nav>
+                <a href="about.html" aria-label="About">About</a>
+                <div class="logo-container">
+                    <a href="index.html" aria-label="Home">
+                        <img id="logo" src="images/DC-2.png" alt="DateCage.com Icon">
+                    </a>
+                </div>
+                <a href="contact.html" aria-label="Contact">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>Ready to have your heart Caged?</h1>
+                <div class="punchline">
+                    <img src="images/Cage/Gator.jpg" alt="Cage holding an Alligator">
+                    <h1>Go wrestle that gator</h1>
+                </div>
+            </section>
+            <section>
+                <div class="form">
+                    <div id="form"></div>
+                    <form action="/my-handling-form-page" method="post">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" required placeholder="Your Name"/>
+                    </p>
+                    <p>
+                        <label for="number">Number:</label>
+                        <input type="number" id="number" name="user_number" required placeholder="Your Number"/>
+                    </p>
+                    <p>
+                        <label for="msg">To Cage:</label>
+                        <textarea id="msg" name="user_message" placeholder="Got any fun activity ideas to do with cage?"></textarea>
+                    </p>
+
+                    <p class="button">
+                        <button type="submit">Send your message</button>
+                    </p>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100069572364437" target="_blank" aria-label="Facebook">
+                    <img src="images/FaceR.jpg" alt="Facebook Icon" width="30" height="30">
+                </a>
+                <a href="contact.html" target="_blank" aria-label="Twitter">
+                    <img src="images/GmailR.jpeg" alt="Twitter Icon" width="30" height="30">
+                </a>
+                <a href="https://www.instagram.com/cagejoos/?utm_source=ig_web_button_share_sheet" target="_blank" aria-label="Instagram">
+                    <img src="images/InstaR.jpg" alt="Instagram Icon" width="30" height="30">
                 </a>
             </div>
-            <a href="contact.html" aria-label="Contact">Contact</a>
-        </nav>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
-        <div class="social">
-            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                <img src="path/to/facebook-icon.png" alt="Facebook Icon" width="30" height="30">
-            </a>
-            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-                <img src="path/to/twitter-icon.png" alt="Twitter Icon" width="30" height="30">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                <img src="path/to/instagram-icon.png" alt="Instagram Icon" width="30" height="30">
-            </a>
-        </div>
-        <div class="f-nav">
-            <a href="site-plan.html" target="_blank" aria-label="Site-plan link">Veiw Site Plan</a>
-            <a href="../index.html" target="_blank" aria-label="A link to the home portal">Back to Portal</a>
-        </div>
-    </footer> 
+            <div class="f-nav">
+                <a href="site-plan.html" target="_blank" aria-label="Site-plan link">Veiw Site Plan</a>
+                <a href="../index.html" target="_blank" aria-label="A link to the home portal">Back to Portal</a>
+            </div>
+        </footer> 
+    </div>
 </body>
 </html>
