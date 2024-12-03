@@ -13,6 +13,9 @@ body{
     text-align: center;
     margin: auto;
 }
+img{
+    width: 100%;
+}
 .cage{
     background-color: #ffffff;
 }
@@ -22,35 +25,90 @@ header{
 }
 nav {
     display: flex;
-    justify-content: space-between; /* This will distribute space between the items */
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    max-width: 500px; /* This will vertically center the items */
+    max-width: 500px;
+    padding: 10px;
 }
+.logo-container{
+    width: 100px; 
+    max-height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 
+}
 #logo {
-    order: 1; /* Ensure the logo is in the center */
-    margin: 0 auto; /* Center the logo */
+    margin: 0 auto;
+    z-index: 900;
+    object-fit: cover;
+    height: 100px;
+}
+#logo :hover{
+    /* width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    transform: scale(1.3); */
+    opacity: 0.5;
+    display: block #fff;
 }
 nav a {
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center items vertically */
-    text-decoration: none; /* Remove underline */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
     padding: 10px;
-    margin: 0 20px; /* Space around text */
-    color: #ddb22f; /* Text color */
+    margin: 0 20px; 
+    color: #ddb22f;
+}
+nav div :hover {
+    /* width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    transform: scale(1.1); */
+    /* opacity: 0.005; */
+    display: block #fff;
 }
 
 nav img {
     margin-left: 5px; /* Space between text and image */
 }
-#hero{
+#hero
+/*-------------------------possible grid??? */
+/* #hero{
     background-color: #ffffff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
-#hero img{
+#hero-msg img{
     width: 100%;
+    grid-column: 1/3;
 }
-
+#hero-box{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+#hero-msg h1, #hero-msg h4 {
+  text-align: center;
+}
+#hero-msg h4{
+  color: white;
+}
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.home-title{
+  color: #d9c2a3;
+  font-family: 'Rock Salt', 'Roboto','Josefin Sans', Arial, sans-serif;
+  font-size: 3rem;
+  margin-top: 10px;
+} */
+/*-------------------------possible grid??? */
 a img{
     width: 100px;
 }
