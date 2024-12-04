@@ -1,6 +1,7 @@
 html {
     background-color: #262730;
 }
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Permanent+Marker&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 :root {
     --primary-color: #801616;
     --secondary-color: #f3d8c7;
@@ -9,6 +10,8 @@ html {
     --background-color: #801616;
 }
 body{
+    height: auto;
+    min-height: 1600px;
     max-width: 1600px;
     text-align: center;
     margin: auto;
@@ -45,16 +48,8 @@ nav {
     height: 100px;
     transition: transform .5s;
 }
-nav a :hover{
-    color: wheat;
-    background-color: #801616;
-    transform: scale(1.1);
-}
-a.tab:hover {
-    color: #f3d8c7;
-    background-color: #801616;
-    transform: scale(1.1);
-    text-decoration: none;
+a img{
+    width: 100px;
 }
 nav a {
     display: flex;
@@ -62,7 +57,12 @@ nav a {
     text-decoration: none;
     padding: 10px;
     margin: 0 20px; 
-    color: #ddb22f;
+    color: #262730;
+}
+nav a:hover{
+    color: #fedc9e;
+    background-color: #871717;
+    transform: scale(1.1);
 }
 nav img {
     margin-left: 5px;
@@ -70,49 +70,91 @@ nav img {
 img {
     width: 100%;
 }
-#hero {
-    background-image: linear-gradient(to bottom, #f7f7f7);
-    background-size: 100% 300px;
+h1{
+    margin: 0;
 }
-/*-------------------------possible grid??? */
-/* #hero{
-    background-color: #ffffff;
+h4{
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+#hero {
     text-align: center;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: .75fr 4fr 2fr 2fr 1fr;
+    max-height: 300px;
+    margin-bottom: 400px;
 }
-#hero-msg img{
+#hero img{
     width: 100%;
-    grid-column: 1/3;
 }
 #hero-box{
-    grid-column: 1/3;
-    grid-row: 1/3;
+    grid-column: 1/6;
+    grid-row: 1/2;
 }
 #hero-msg h1, #hero-msg h4 {
-  text-align: center;
-}
-#hero-msg h4{
-  color: white;
-}
-#hero-msg {
-  grid-column: 2/3;
-  grid-row: 1/2;
+    text-align: center;
+    width: 100%;
 }
 .home-title{
-  color: #d9c2a3;
-  font-family: 'Rock Salt', 'Roboto','Josefin Sans', Arial, sans-serif;
-  font-size: 3rem;
-  margin-top: 10px;
-} */
-/*-------------------------possible grid??? */
-a img{
-    width: 100px;
+    color: #fcf4e3;
+    font-family: 'Josefin Sans','Rock Salt', 'Roboto', Arial, sans-serif;
+    font-size: 5rem;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 130px;
 }
-.bottom-tag img{
+#hero-msg h4{
+    color: #fcf4e3;
+    font-family: 'Josefin Sans';
+    font-size: 2rem;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 20px;
+}
+/* ------------section-------------- */
+.info{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#introduction{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 50px 100px 50px 100px;
+}
+.options{
+    display: flexbox;
+    border-radius: 5px, #d92020;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.button {
+    padding: 50px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.button a{
+    text-decoration: none
+}
+.get-to-know{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-bottom: 40px;
+}
+.get-to-know a{
+    text-decoration: none;
+}
+.bottom-tag{
     width: 600px;
+    grid-column: 2/3;
 }
+/* -------------section------------- */
+
 footer{
+    height: 100px;
     background-color: #801616;
     color: #ddb22f;
 }
@@ -123,8 +165,9 @@ footer{
     text-decoration: none;
     height: 80px;
 }
-.social a{
-    text-decoration: none;
+.social-bar{
+    width: 400px;
+    margin: 0 auto;
 }
 .social img{
     height: 50px;
@@ -133,6 +176,7 @@ footer{
 }
 .f-nav a{
     text-decoration: none;
+    margin-left: 15px;
     color:#f0ffff
 }
 /* --------Contact--------- */
@@ -193,3 +237,4 @@ button {
     right: 5px;
     color: #801616;
 }
+/* <---------end of carousel-------> */
