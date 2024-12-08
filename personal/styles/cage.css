@@ -23,6 +23,7 @@ body{
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    padding-bottom: 0;
 }
 header{
     background-color: #801616;
@@ -83,13 +84,10 @@ h4{
     margin: 0;
     letter-spacing: 1.5px;
 }
-/* #hero {
-    text-align: center;
-    display: grid;
-    grid-template-columns: .75fr 4fr 2fr 2fr 1fr;
-    max-height: 300px;
-    margin-bottom: 400px;
-} */
+#hero{
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
 #hero img{
     width: 100%;
 }
@@ -113,8 +111,8 @@ h4{
     display: flex;
     justify-content: space-around;
     background-color: #801616;
-    padding: 20px;
-    height: auto;
+    padding-bottom: 20px;
+    height: 200px;
     text-align: center;
     margin: 0 auto;
 }
@@ -128,12 +126,17 @@ h4{
 }
 .buttons img:hover{
     transform: scale(1.1);
+    margin-bottom: 40px;
 }
 /* -------Gallery------- */
 .background{
-
+    margin-top: -20px;
     background-color: #fff5dd;
-    border-radius: 5px;
+    border-radius: 25px;
+}
+.close{
+    color: #fff5dd;
+    margin-bottom: 5px;
 }
 .shmolder{
     grid-column: 2/3;
@@ -166,7 +169,7 @@ footer{
 .social img{
     height: 50px;
     width: auto;
-    padding: 5px;
+
 }
 .social img:hover{
     transform: scale(1.1);
@@ -198,10 +201,45 @@ footer{
     display: flex;
     margin: 0 auto;
 }
+/* --------About--------- */
+#tips{
+    margin-bottom: 80px;
+    padding-bottom: 10px;
+}
+.one{
+    background-color: #f3d8c7;
+    padding: 10px;
+    margin: 10px 100px 10px 100px;
+}
+.one h1, h3{
+    color: #262730;
+    
+}
+.two{
+    background-color: #f3d8c7;
+    padding: 10px;
+    margin: 10px 100px 10px 100px;
+}
+.two h1, h3{
+    color: #262730;
+}
+.three{
+    background-color: #f3d8c7;
+    padding: 10px;
+    margin: 10px 100px 10px 100px;
+}
+.three h1, h3{
+    color: #262730;
+}
+/* .space{
+    background-color: #262730;
+    padding-bottom: 3px;
+} */
 /* -----------Carousel------------ */
 #gallery{
     background-color: #8c1919;
     max-height: 780px;
+    /* margin-bottom: 3px; */ /*<<<---devider--*/
 }
 #gallery h1{
     padding: 20px;
