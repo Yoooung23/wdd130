@@ -23,9 +23,6 @@
             <div id="hero">
                 <img src="images/Cage/BannerFam.png" alt="Large Image of Cage">
             </div>
-            <div class="declaration">
-                <h2>Que The Baby Pics!!</h2>
-            </div>
             <section id="tips">
                     <div class="container1">
                         <img src="images/Cage/card1.png" alt="Image Of Baby Cage" class="image">
@@ -55,7 +52,7 @@
             </section>
             <div class="space">
                 <section id="gallery">
-                    <h2>Manly Evidence From History:</h2>
+                    <h2>QUE THE BABY PICS!!</h2>
                     <div class="carousel">
                         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
                         <div class="carousel-images">
@@ -88,25 +85,26 @@
             </div>
         </footer> 
     </div> 
+
+<script>
+    let currentIndex = 0;
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.slide');
+        if (index >= slides.length) {
+            currentIndex = 0;
+        } else if (index < 0) {
+            currentIndex = slides.length - 1;
+        } else {
+            currentIndex = index;
+        }
+        const offset = -currentIndex * 100;
+        document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+    }
+    function changeSlide(direction) {
+        showSlide(currentIndex + direction);
+    }
+    // Initial display
+    showSlide(currentIndex);
+</script>
 </body>
-    <script>
-        let currentIndex = 0;
-        function showSlide(index) {
-            const slides = document.querySelectorAll('.slide');
-            if (index >= slides.length) {
-                currentIndex = 0;
-            } else if (index < 0) {
-                currentIndex = slides.length - 1;
-            } else {
-                currentIndex = index;
-            }
-            const offset = -currentIndex * 100;
-            document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
-        }
-        function changeSlide(direction) {
-            showSlide(currentIndex + direction);
-        }
-        // Initial display
-        showSlide(currentIndex);
-    </script>
 </html>
