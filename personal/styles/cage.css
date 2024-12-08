@@ -237,7 +237,7 @@ footer{
     background-color: #801616;
     padding: 20px;
     border-radius: 25px;
-    box-shadow: 3px 3px 7px #262730;
+    /* box-shadow: 3px 3px 7px #262730; */
 }
 .container2{
     position: relative;
@@ -247,7 +247,7 @@ footer{
     background-color: #801616;
     padding: 20px;
     border-radius: 25px;
-    box-shadow: 3px 3px 7px #262730;
+    /* box-shadow: 3px 3px 7px #262730; */
 }
 .container3{
     position: relative;
@@ -257,7 +257,7 @@ footer{
     background-color: #801616;
     padding: 20px;
     border-radius: 25px;
-    box-shadow: 3px 3px 7px #262730;
+    /* box-shadow: 3px 3px 7px #262730; */
 }
 .image {
     display: block;
@@ -317,19 +317,21 @@ padding: 10px;
 /* -----------Carousel------------ */
 #gallery{
     background-color: #8c1919;
-    max-height: 780px;
+    max-height: auto;
+    padding-bottom: 20px;
     /* margin-bottom: 3px; */ /*<<<---devider--*/
 }
 #gallery h2{
     padding: 40px;
+    margin-bottom: 10px;
     font-size: 2em;
     font-family: 'Josefin Sans','Rock Salt', 'Roboto', Arial, sans-serif;
     color: #fff5dd;
 }
 .carousel {
     position: relative;
-    max-width: 1000px; 
-    height: auto; 
+    max-width: 90%; 
+    height: 700px; 
     margin: 0 auto;
     overflow: hidden;
     border-radius: 25px;
@@ -337,9 +339,8 @@ padding: 10px;
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease;
-}
-.carousel-images img {
-    max-width: 800px;
+
+    object-fit: cover;
 }
 .slide {
     min-width: 100%;
