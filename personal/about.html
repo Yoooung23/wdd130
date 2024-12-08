@@ -24,43 +24,42 @@
                 <img src="images/Cage/BannerFam.png" alt="Large Image of Cage">
             </div>
             <div class="declaration">
-                <h1>Que The Baby Pics!!</h1>
+                <h2>Que The Baby Pics!!</h2>
             </div>
             <section id="tips">
                     <div class="container1">
-                        <img src="images/Cage/card1.png" alt="Avatar" class="image">
-                        <h1>Be Yourself</h1>
+                        <img src="images/Cage/card1.png" alt="Image Of Baby Cage" class="image">
+                        <h2>Be Yourself</h2>
                         <div class="overlay">
-                            <div class="text"><p>Authenticity is Attractive.</p>Don't try to be someone you're not. Embrace your quirks, passions, and unique personality. The right person will appreciate you for who you truly are.</div>
+                            <div class="text"><img class="ovly" alt="Dating advice image" src="images/overlay1.png"></div>
                         </div>
                     </div>
                     <div class="container2">
-                        <img src="images/Cage/card2.png" alt="Avatar" class="image">
-                        <h1>Have Fun</h1>
+                        <img src="images/Cage/card2.png" alt="Image Of Baby Cage" class="image">
+                        <h2>Have Fun</h2>
                         <div class="overlay">
-                            <div class="text">Cachow Baby!</div>
+                            <div class="text"><img class="ovly" alt="Dating advice image" src="images/overlay2.png"></div>
                         </div>
                     </div>
                     <div class="container3">
-                        <img src="images/Cage/card3.png" alt="Avatar" class="image">
-                        <h1>Nothing to Lose</h1>
+                        <img src="images/Cage/card3.png" alt="Image Of Baby Cage" class="image">
+                        <h2>Nothing to Lose</h2>
                         <div class="overlay">
-                            <div class="text">Cachow Baby!</div>
+                            <div class="text"><img class="ovly" alt="Dating advice image" src="images/overlay3.png"></div>
                         </div>
                     </div>
             </section>
             <section class="butt-txt">
-                <h1>Wanna Send Him a Message?</h1>
-                <a href="contact.html" aria-required="Message him">
-                    <img src="images/messaging.jpeg" alt="Messaging Icon"></a>
+                <h2>Wanna Send Him a Message?</h2>
+                <a href="contact.html"><img src="images/messaging.jpeg" alt="Messaging Icon"></a>
             </section>
             <div class="space">
                 <section id="gallery">
-                    <h1>Manly Evidence From History:</h1>
+                    <h2>Manly Evidence From History:</h2>
                     <div class="carousel">
                         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
                         <div class="carousel-images">
-                            <img src="images/Cage/cage-collage.png" alt="Image 1" class="slide">
+                            <img src="images/Cage/best-brother.png" alt="Image 1" class="slide">
                             <img src="images/Cage/the-right-fish.png" alt="Image 2" class="slide">
                             <img src="images/Cage/watchthatheart.JPG" alt="Image 3" class="slide">
                         </div>
@@ -90,27 +89,24 @@
         </footer> 
     </div> 
 </body>
-<script>
-    let currentIndex = 0;
-    
-    function showSlide(index) {
-        const slides = document.querySelectorAll('.slide');
-        if (index >= slides.length) {
-            currentIndex = 0;
-        } else if (index < 0) {
-            currentIndex = slides.length - 1;
-        } else {
-            currentIndex = index;
+    <script>
+        let currentIndex = 0;
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            if (index >= slides.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slides.length - 1;
+            } else {
+                currentIndex = index;
+            }
+            const offset = -currentIndex * 100;
+            document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
         }
-        const offset = -currentIndex * 100;
-        document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
-    }
-    
-    function changeSlide(direction) {
-        showSlide(currentIndex + direction);
-    }
-    
-    // Initial display
-    showSlide(currentIndex);
+        function changeSlide(direction) {
+            showSlide(currentIndex + direction);
+        }
+        // Initial display
+        showSlide(currentIndex);
     </script>
 </html>
