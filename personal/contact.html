@@ -21,33 +21,29 @@
         </header>
         <main>
             <section class="hero">
-                <h1>Ready to have your heart Caged?</h1>
-                <div class="punchline">
-                    <img src="images/Cage/Gator.jpg" alt="Cage holding an Alligator">
-                    <h1>Go wrestle that gator</h1>
-                </div>
+                <img src="images/Cage/raise_me.png" alt="">
+                <!-- <h1>Ready to have your heart Caged?</h1> -->
             </section>
             <section>
-                <div class="form">
-                    <div id="form"></div>
-                    <form action="/my-handling-form-page" method="post">
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name" required placeholder="Your Name"/>
-                    </p>
-                    <p>
-                        <label for="number">Number:</label>
-                        <input type="number" id="number" name="user_number" required placeholder="Your Number"/>
-                    </p>
-                    <p>
-                        <label for="msg">To Cage:</label>
-                        <textarea id="msg" name="user_message" placeholder="Got any fun activity ideas to do with cage?"></textarea>
-                    </p>
+                <div>
+                    <form class="submit" action="/action_page.php">
+                        <label for="fname"><p>First Name</p></label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                        <label for="lname"><p>Last Name</p></label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  
+                        <label for="phone#"><p># Number</p></label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your Phone Number..">
 
-                    <p class="button">
-                        <button type="submit">Send your message</button>
-                    </p>
+                        <input type="submit" value="Submit">
                     </form>
+                  </div>
+            </section>
+            <section class="end-tag">
+                <div class="punchline">
+                    <img class="i_candy" src="images/Cage/Gator.jpg" alt="Cage holding an Alligator">
+                    <img class="tagline" src="images/Cage/wrestle.png" alt="Text saying; Go wrestle that Gator!">
                 </div>
             </section>
         </main>
