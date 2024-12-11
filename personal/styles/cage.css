@@ -26,16 +26,22 @@ body{
     padding-bottom: 0;
 }
 header{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
     background-color: #801616;
     margin: 0 auto;
 }
 nav {
     display: flex;
     justify-content: space-between;
+    grid-column: 4/7;
     align-items: center;
     margin: 0 auto;
     max-width: 500px;
     padding: 10px;
+    /* ---------------- */
+    position: relative;
+    /* ---------------- */
 }
 .cage{
     margin: 0 auto;
@@ -78,6 +84,103 @@ nav a:hover{
 nav img {
     margin-left: 5px;
 }
+.abt{
+    display: none;
+}
+/* ------------HAM-------------- */
+/* ------------HAM-------------- */
+/* ------------HAM-------------- */
+/* ------------HAM-------------- */
+a {
+    color: #f3d8c7;
+    text-decoration: none;
+  }
+.p-menu1{
+    margin-top: 25px;
+    grid-column: 9/10;
+    height: 100%;
+}
+.hamburger1 {
+   height: 45px;
+   margin: 10px;
+   display: -ms-grid;
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+   justify-items: center;
+   z-index: 120;
+}
+.hamburger1 div {
+   background-color: #fff;
+   position: relative;
+   width: 40px;
+   height: 5px;
+   margin-top: 7px;
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.hamburger1 :hover{
+    background-color: #f3d8c7;
+}
+#toggle1 {
+   display: none;
+}
+#toggle1:checked + .hamburger1 .top {
+   -webkit-transform: rotate(-45deg);
+           transform: rotate(-45deg);
+           color: #262730;
+   /* margin-top: 22.5px; */
+}
+#toggle1:checked + .hamburger1 .meat {
+   -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+   margin-top: -5px;
+}
+#toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+}
+#toggle1:checked ~ .menu1 {
+   height: 200px;
+}
+.menu1 {
+    width: 100%;
+    background-color: #801616;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 5px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.menu1 :hover{
+    background-color: #f3d8c7;
+}
+ .link1 {
+   width: 100%;
+   margin: 0;
+   padding: 10px 0;
+   font: 700 20px 'Oswald', sans-serif;
+}
+ .link1:hover {
+   background-color: #fff;
+   color: #3d3d3d;
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+}
+/* ------------HAM-------------- */
+/* ------------HAM-------------- */
+/* ------------HAM-------------- */
+/* ------------HAM-------------- */
 img {
     width: 100%;
 }
@@ -203,9 +306,9 @@ input[type=text], select {
     border: 2px solid #f3d8c7;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
   
-  input[type=submit] {
+input[type=submit] {
     width: 100%;
     background-color: #fff;
     color: #262730;
@@ -216,19 +319,19 @@ input[type=text], select {
     font-size: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
-  }
+}
   
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #262730;
     color: #fedc9e;
     /* font-size: 2em; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-  form p{
+}
+form p{
     color: #fff;
     font-size: 1.5em;
     font-family: 'Josefin Sans', 'Roboto', Arial, sans-serif;
-  }
+}
   
 .submit {
     border-radius: 25px;
@@ -241,7 +344,7 @@ input[type=text], select {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     margin: 0 auto;
-    border-radius: top-left;
+    border-radius: 30px 30px 0 0;
     padding: 10px;
     background-color: #f3d8c7;
 }
@@ -250,6 +353,7 @@ input[type=text], select {
     background-color: #fff;
     margin: 0 auto;
     padding: 10px;
+    width: auto;
     /* margin: 20% 10%; */
     border-radius: 25px;
     /* padding: 20px; */
@@ -452,6 +556,15 @@ button {
         height: 100%;
         padding: 5px;
         margin-top: 10px;
+    }
+    .abt{
+        display: none;
+    }
+    #ham{
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        background-color: #801616;
     }
     #logo{
         height: auto;
